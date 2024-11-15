@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Arreglo con los nombres específicos de cada proyecto
     const projectNames = [
-        "Evolución Gráfica en Chile", // Nombre del Proyecto 1
-        "IllumEgo",                   // Nombre del Proyecto 2
-        "Tale of the Nine Tailed",     // Nombre del Proyecto 3
-        "Fanzine Tipográfico",         // Nombre del Proyecto 4
-        "Proyecto de Diseño Editorial", // Nombre del Proyecto 5
+        "Parásitos", // Nombre del Proyecto 1
+        "Beethoven",                   // Nombre del Proyecto 2
+        "IllumEgo",     // Nombre del Proyecto 3
+        "Linea de té",         // Nombre del Proyecto 4
+        "Ilustración", // Nombre del Proyecto 5
     
         // Agrega más nombres de proyectos si es necesario
     ];
