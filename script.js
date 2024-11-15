@@ -1,8 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() { 
     const imageContainer = document.getElementById('imageContainer');
 
     // Ruta de la carpeta de imágenes
     const imagesFolder = 'imagenes/';
+
+    // Arreglo con los nombres específicos de cada proyecto
+    const projectNames = [
+        "Evolución Gráfica en Chile", // Nombre del Proyecto 1
+        "IllumEgo",                   // Nombre del Proyecto 2
+        "Tale of the Nine Tailed",     // Nombre del Proyecto 3
+        "Fanzine Tipográfico",         // Nombre del Proyecto 4
+        "Proyecto de Diseño Editorial", // Nombre del Proyecto 5
+    
+        // Agrega más nombres de proyectos si es necesario
+    ];
 
     // Función para cargar imágenes secuencialmente hasta encontrar una que no exista
     async function findTotalImages() {
@@ -40,10 +51,14 @@ document.addEventListener("DOMContentLoaded", function() {
         imageNames.forEach((imageName, index) => {
             const box = document.createElement('div');
             box.className = 'box';
+
+            // Usa el nombre del proyecto si existe en el arreglo, de lo contrario usa "Proyecto X"
+            const projectName = projectNames[index] || `Proyecto ${index + 1}`;
+
             box.innerHTML = `
-                <img src="${imagesFolder}${imageName}" alt="">
+                <img src="${imagesFolder}${imageName}" alt="${projectName}">
                 <div class="overlay">
-                    <h2>Proyecto ${index + 1}</h2>
+                    <h2>${projectName}</h2>
                 </div>
             `;
             imageContainer.appendChild(box);
