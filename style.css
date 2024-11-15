@@ -7,7 +7,7 @@ body {
 /* Estilo del encabezado principal */
 .main-header {
     text-align: center;
-    background-color: #744bc3; /* Fondo del encabezado */
+    background-color: #fff2d8; /* Fondo del encabezado */
     color: #744bc3; /* Color del texto */
     padding: 20px 0;
     margin-bottom: 40px; /* Asegura que el encabezado no se superponga con el contenido */
