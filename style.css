@@ -1,12 +1,37 @@
+/* Estilo general de la página */
 body {
     background-color: #ffffff;
     margin: 30px;
+    font-family: Arial, sans-serif;
 }
 
-.galeria h1 {
+/* Estilo del encabezado principal */
+.main-header {
     text-align: center;
+    background-color: #830000; /* Fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 20px 0;
 }
 
+.main-header h1 {
+    font-size: 2.5rem; /* Tamaño del título principal */
+    margin-bottom: 0.5rem;
+}
+
+.main-header p {
+    font-size: 1.2rem; /* Tamaño del nombre */
+    margin-top: 0;
+}
+
+/* Estilo del título de la galería */
+.galeria h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Estilo de las imágenes y la galería */
 img {
     max-width: 100%;
     margin-bottom: 30px;
@@ -24,6 +49,7 @@ img {
     padding-bottom: 0px; 
 }
 
+/* Estilo del overlay de la galería */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -38,7 +64,7 @@ img {
 
 .overlay h2 {
     color: white;
-    font-size: 30px;
+    font-size: 1.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,3 +76,4 @@ img {
     height: 100%;
     cursor: pointer; 
 }
+
