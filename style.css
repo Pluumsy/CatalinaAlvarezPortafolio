@@ -5,11 +5,11 @@ body {
     color: #333;
 }
 
-.main-content h1 {
+.portada-titulo {
     font-size: 4rem;
     margin-bottom: 20px;
-    font-family: "Baskerville Old Face", Georgia, serif; /* Baskerville como principal, con alternativas */
-    color: #000; /* Texto en negro */
+    font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
+    color: #000; /* Color negro */
 }
 
 /* Página principal */
