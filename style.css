@@ -1,14 +1,14 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: Century Gothic,'Acme', Arial, sans-serif;
+    font-family: Century Gothic, 'Acme', Arial, sans-serif;
     color: #333;
 }
 
 /* Página principal */
 .main-page {
     position: relative;
-    width: 100;
+    width: 100%;
     min-height: 100vh;
     overflow: hidden;
     display: flex;
@@ -19,20 +19,17 @@ body {
     background-size: cover;
 }
 
-
 .background-overlay {
     background: rgba(0, 0, 0, 0); /* Transparente */
 }
-
 
 .main-content {
     position: relative;
     z-index: 2;
     color: #fff;
-    margin-top: 140px; /* Ajusta el valor para mover hacia abajo */
+    margin-top: 140px; /* Ajusta el valor para mover el contenido hacia abajo */
     text-align: center;
 }
-
 
 .main-content h1 {
     font-size: 4rem;
@@ -64,84 +61,33 @@ body {
     transform: scale(1.05); /* Ligeramente más grande */
 }
 
-/* Encabezado principal */
-.main-header {
-    text-align: center;
-    background-color: #fff2d8;
-    color: #744bc3;
-    padding: 20px 0;
-    margin-bottom: 20px;
+/* Media Queries para diseño responsivo */
+
+/* Para pantallas pequeñas (móviles, menos de 768px) */
+@media (max-width: 768px) {
+    .main-content h1 {
+        font-size: 2.5rem; /* Reduce el tamaño del título */
+    }
+
+    .btn {
+        padding: 8px 20px; /* Reduce el tamaño del botón */
+        font-size: 1rem; /* Reduce el tamaño del texto en los botones */
+    }
+
+    .button-container {
+        flex-direction: column; /* Botones uno debajo del otro */
+        gap: 15px; /* Espacio entre botones */
+    }
 }
 
-.main-header h1 {
-    font-size: 2.5rem;
-}
+/* Para pantallas medianas (tablets, entre 768px y 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-content h1 {
+        font-size: 3rem; /* Ajusta el tamaño del título */
+    }
 
-/* Sección "Sobre Mí" */
-.about-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.about-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.about-container p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-}
-
-/* Galería de Proyectos */
-.galeria h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 20px;
-    color: #333;
-}
-
-.container {
-    columns: 3 320px;
-    column-gap: 30px;
-}
-
-.box {
-    position: relative;
-    padding-bottom: 0px;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: #000000b2;
-    width: 100%;
-    height: 0%;
-    border-radius: 3px;
-    transition: .5s ease;
-    overflow: hidden;
-}
-
-.overlay h2 {
-    color: white;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.box:hover .overlay {
-    height: 100%;
-    cursor: pointer;
-}
-
-/* Botón de regreso */
-.back-container {
-    text-align: center;
-    margin: 20px 0;
+    .btn {
+        padding: 10px 25px; /* Ajuste intermedio para botones */
+        font-size: 1.1rem;
+    }
 }
