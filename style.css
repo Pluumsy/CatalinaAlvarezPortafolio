@@ -67,17 +67,11 @@ body {
     background-color: #fff2d8;
     color: #744bc3;
     padding: 20px 0;
-    margin-top: -10px;
+    margin-bottom: 20px;
 }
 
 .main-header h1 {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.main-header p {
-    font-size: 1.2rem;
-    margin-top: 0;
 }
 
 /* Sección "Sobre Mí" */
@@ -148,5 +142,11 @@ img {
 .box:hover .overlay {
     height: 100%;
     cursor: pointer;
+}
+
+/* Botón de regreso */
+.back-container {
+    text-align: center;
+    margin: 20px 0;
 }
 
