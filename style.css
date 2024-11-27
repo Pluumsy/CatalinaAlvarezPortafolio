@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: 'Acme', Arial, sans-serif;
+    color: #333;
 }
 
 /* Página principal */
@@ -100,13 +101,6 @@ body {
     color: #333;
 }
 
-img {
-    max-width: 100%;
-    margin-bottom: 30px;
-    display: block;
-    border-radius: 3px;
-}
-
 .container {
     columns: 3 320px;
     column-gap: 30px;
@@ -149,4 +143,3 @@ img {
     text-align: center;
     margin: 20px 0;
 }
-
