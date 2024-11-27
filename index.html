@@ -5,22 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <title>Portafolio de Diseño Gráfico - Aylen Bassaletti</title>
 </head>
 <body>
+    <!-- Página principal -->
+    <div class="main-page">
+        <div class="background-overlay"></div>
+        <div class="main-content">
+            <h1>Portafolio</h1>
+            <div class="button-container">
+                <a href="#about" class="btn">Sobre Mí</a>
+                <a href="#projects" class="btn">Proyectos</a>
+            </div>
+        </div>
+    </div>
 
-<!-- Encabezado principal con título y nombre -->
-<header class="main-header">
-    <h1>Portafolio</h1>
-    <p>Catalina Álvarez Guzmán</p>
-</header>
+    <!-- Encabezado principal con título y nombre -->
+    <header class="main-header">
+        <h1>Portafolio</h1>
+        <p>Aylen Bassaletti</p>
+    </header>
 
-<!-- Galería de imágenes -->
-<div class="galeria">
-    <h2>Proyectos</h2>
-    <div class="container" id="imageContainer"></div>
-</div>
+    <!-- Sección "Sobre Mí" -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy Aylen Bassaletti, estudiante de diseño gráfico especializada en áreas como programación, diseño editorial y tecnologías interactivas.</p>
+        </div>
+    </section>
 
-<script src="script.js"></script>
+    <!-- Galería de imágenes -->
+    <section id="projects">
+        <div class="galeria">
+            <h2>Proyectos</h2>
+            <div class="container" id="imageContainer"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
