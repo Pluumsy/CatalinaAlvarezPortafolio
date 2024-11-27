@@ -28,7 +28,10 @@ body {
     position: relative;
     z-index: 2;
     color: #fff;
+    margin-top: 50px; /* Ajusta el valor para mover hacia abajo */
+    text-align: center;
 }
+
 
 .main-content h1 {
     font-size: 4rem;
