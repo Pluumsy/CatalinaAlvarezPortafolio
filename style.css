@@ -28,7 +28,7 @@ body {
     position: relative;
     z-index: 2;
     color: #fff;
-    margin-top: 80px; /* Ajusta el valor para mover hacia abajo */
+    margin-top: 140px; /* Ajusta el valor para mover hacia abajo */
     text-align: center;
 }
 
