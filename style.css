@@ -8,14 +8,15 @@ body {
 /* Página principal */
 .main-page {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100;
+    min-height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background: url('imagenes/fondo.jpg') no-repeat center center/cover;
+    background-size: cover;
 }
 
 
