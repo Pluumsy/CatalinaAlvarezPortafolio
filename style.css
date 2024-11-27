@@ -20,9 +20,8 @@ body {
 
 
 .background-overlay {
-    display: none; /* Alternativamente, puedes ocultarla sin eliminarla */
+    background: rgba(0, 0, 0, 0); /* Transparente */
 }
-
 
 
 .main-content {
