@@ -1,13 +1,16 @@
 /* Texto en la esquina superior izquierda */
 .corner-text {
     position: absolute;
-    top: 2px; /* Distancia desde el borde superior */
-    left: 2px; /* Distancia desde el borde izquierdo */
+    top: 0; /* Posición en la parte superior */
+    left: 0; /* Posición en la parte izquierda */
+    padding: 10px; /* Opcional: Espaciado interno para separarlo un poco del borde */
     font-size: 1.5rem; /* Tamaño del texto */
     color: #000; /* Color del texto */
-    font-family: 'Century Gothic', Arial, Georgia, serif; /* Fuente específica */
+    font-family: 'Baskerville Old Face', Georgia, serif; /* Fuente específica */
     z-index: 10; /* Sobre otros elementos */
+    margin: 0; /* Asegura que no haya márgenes extra */
 }
+
 
 /* General Styles */
 body {
