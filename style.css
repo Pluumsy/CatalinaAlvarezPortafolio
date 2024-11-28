@@ -1,17 +1,3 @@
-/* Texto en la esquina superior izquierda */
-.corner-text {
-    position: absolute;
-    top: 0; /* Posición en la parte superior */
-    left: 0; /* Posición en la parte izquierda */
-    padding: 10px; /* Opcional: Espaciado interno para separarlo un poco del borde */
-    font-size: 1.5rem; /* Tamaño del texto */
-    color: #000; /* Color del texto */
-    font-family: 'Baskerville Old Face', Georgia, serif; /* Fuente específica */
-    z-index: 10; /* Sobre otros elementos */
-    margin: 0; /* Asegura que no haya márgenes extra */
-}
-
-
 /* General Styles */
 body {
     margin: 0;
@@ -40,6 +26,34 @@ body {
     background-size: cover;
 }
 
+/* Texto en la esquina superior derecha con línea */
+.header-with-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Texto a la derecha */
+    padding: 10px;
+    z-index: 10;
+}
+
+.corner-text {
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-family: 'Baskerville Old Face', Georgia, serif; /* Fuente específica */
+    color: #000; /* Color del texto */
+    margin-right: 10px; /* Espaciado a la derecha del texto */
+}
+
+.horizontal-line {
+    flex-grow: 1; /* Línea ocupa el resto del espacio */
+    height: 2px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea */
+    margin-left: 10px; /* Espaciado a la izquierda del texto */
+}
+
+/* Fondo transparente */
 .background-overlay {
     background: rgba(0, 0, 0, 0); /* Transparente */
 }
@@ -83,42 +97,6 @@ body {
 }
 
 /* Media Queries para diseño responsivo */
-
-/* Para pantallas pequeñas (móviles, menos de 768px) */
 @media (max-width: 768px) {
     .main-content h1 {
-        font-size: 2.5rem; /* Reduce el tamaño del título */
-    }
-
-    .btn {
-        padding: 8px 20px; /* Reduce el tamaño del botón */
-        font-size: 1rem; /* Reduce el tamaño del texto en los botones */
-    }
-
-    .button-container {
-        flex-direction: column; /* Botones uno debajo del otro */
-        gap: 15px; /* Espacio entre botones */
-    }
-
-    .corner-text {
-        font-size: 1rem; /* Ajusta el tamaño del texto */
-        top: 10px; /* Reduce la distancia superior */
-        left: 10px; /* Reduce la distancia izquierda */
-    }
-}
-
-/* Para pantallas medianas (tablets, entre 768px y 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .main-content h1 {
-        font-size: 3rem; /* Ajusta el tamaño del título */
-    }
-
-    .btn {
-        padding: 10px 25px; /* Ajuste intermedio para botones */
-        font-size: 1.1rem;
-    }
-
-    .corner-text {
-        font-size: 1.2rem; /* Ajusta el tamaño del texto */
-    }
-}
+        font-size: 2.5rem; /* Reduce el tamaño
