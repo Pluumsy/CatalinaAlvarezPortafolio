@@ -6,10 +6,12 @@ body {
 }
 
 .portada-titulo {
-    font-size: 25rem;
+    font-size: 40rem;
     margin-bottom: 100px;
     font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
     color: #000; /* Color negro */
+    text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+}
 }
 
 /* Página principal */
@@ -19,8 +21,8 @@ body {
     min-height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
     text-align: center;
     background: url('imagenes/fondo.jpg') no-repeat center center/cover;
     background-size: cover;
