@@ -36,26 +36,24 @@ body {
     width: 100%; /* Ocupa todo el ancho */
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espacio entre el texto y la línea */
-    padding: 10px 20px; /* Márgenes superior e inferior de 10px, izquierdo y derecho de 20px */
+    justify-content: flex-end; /* Texto a la derecha */
+    padding: 10px;
     z-index: 10;
 }
 
 .corner-text {
-    font-size: 1.2rem; /* Tamaño del texto */
+    font-size: 1.0rem; /* Tamaño del texto */
     font-family: Century Gothic, Arial; /* Fuente específica */
     color: #000; /* Color del texto */
-    margin: 0; /* Elimina márgenes extra */
+    margin-right: 10px; /* Espaciado a la derecha del texto */
 }
 
 .horizontal-line {
-    flex-grow: 1; /* Línea ocupa el resto del espacio disponible */
+    flex-grow: 1; /* Línea ocupa el resto del espacio */
     height: 1px; /* Grosor de la línea */
     background-color: #000; /* Color de la línea */
     margin-left: 10px; /* Espaciado a la izquierda del texto */
-    margin-right: 10px; /* Espaciado a la derecha del borde del contenedor */
 }
-
 
 /* Fondo transparente */
 .background-overlay {
@@ -103,4 +101,4 @@ body {
 /* Media Queries para diseño responsivo */
 @media (max-width: 768px) {
     .main-content h1 {
-        font-size: 2.5rem; /* Reduce el tamaño
+        font-size: 2.5rem; /* Reduce el tamaño 
