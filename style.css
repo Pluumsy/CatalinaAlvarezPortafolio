@@ -1,3 +1,14 @@
+/* Texto en la esquina superior izquierda */
+.corner-text {
+    position: absolute;
+    top: 20px; /* Distancia desde el borde superior */
+    left: 20px; /* Distancia desde el borde izquierdo */
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #000; /* Color del texto */
+    font-family: 'Century Gothic', Arial, Georgia, serif; /* Fuente específica */
+    z-index: 10; /* Sobre otros elementos */
+}
+
 /* General Styles */
 body {
     margin: 0;
@@ -85,6 +96,12 @@ body {
         flex-direction: column; /* Botones uno debajo del otro */
         gap: 15px; /* Espacio entre botones */
     }
+
+    .corner-text {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+        top: 10px; /* Reduce la distancia superior */
+        left: 10px; /* Reduce la distancia izquierda */
+    }
 }
 
 /* Para pantallas medianas (tablets, entre 768px y 1024px) */
@@ -96,5 +113,9 @@ body {
     .btn {
         padding: 10px 25px; /* Ajuste intermedio para botones */
         font-size: 1.1rem;
+    }
+
+    .corner-text {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto */
     }
 }
