@@ -40,7 +40,7 @@ body {
 }
 
 .corner-text {
-    font-size: 0.5rem; /* Tamaño del texto */
+    font-size: 1.0rem; /* Tamaño del texto */
     font-family: Century Gothic, Arial; /* Fuente específica */
     color: #000; /* Color del texto */
     margin-right: 10px; /* Espaciado a la derecha del texto */
