@@ -5,12 +5,13 @@ body {
     color: #333;
 }
 
-.portada-titulo {
-    font-size: 40rem;
-    margin-bottom: 200px;
+/* Estilo del Título Principal */
+.main-title {
+    font-size: 6rem; /* Tamaño del texto */
     font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
-    color: #000; /* Color negro */
-    text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+    color: #000; /* Color del texto */
+    text-align: center; /* Asegura que esté centrado */
+    margin: 50px 0; /* Espaciado superior e inferior */
 }
 
 /* Página principal */
@@ -98,5 +99,23 @@ body {
 
 /* Media Queries para diseño responsivo */
 @media (max-width: 768px) {
-    .main-content h1 {
-        font-size: 2.5rem; /* Reduce el tamaño 
+    .main-title {
+        font-size: 4rem; /* Reduce el tamaño del título */
+    }
+
+    .btn {
+        padding: 8px 20px; /* Reduce el tamaño del botón */
+        font-size: 1rem; /* Reduce el tamaño del texto en los botones */
+    }
+
+    .button-container {
+        flex-direction: column; /* Botones uno debajo del otro */
+        gap: 15px; /* Espacio entre botones */
+    }
+
+    .corner-text {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+        top: 10px; /* Reduce la distancia superior */
+        left: 10px; /* Reduce la distancia izquierda */
+    }
+}
