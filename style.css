@@ -1,17 +1,44 @@
-/* General Styles */
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Proyectos - Catalina Alvarez</title>
+</head>
+<body>
+    <!-- Encabezado principal -->
+    <header class="main-header">
+        <h1>Proyectos</h1>
+    </header>
+
+    <!-- Galería de Proyectos -->
+    <div class="galeria">
+        <div class="container" id="imageContainer">
+            <!-- Aquí el script.js agregará las imágenes -->
+        </div>
+        <div class="back-container">
+            <a href="index.html" class="btn">Volver a la Portada</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>                                                                                                                         /* General Styles */ 
 body {
     margin: 0;
     font-family: Century Gothic, Arial;
     color: #333;
 }
 
-/* Estilo del Título Principal */
-.main-title {
-    font-size: 6rem; /* Tamaño del texto */
+.portada-titulo {
+    font-size: 40rem;
+    margin-bottom: 200px;
     font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
-    color: #000; /* Color del texto */
-    text-align: center; /* Asegura que esté centrado */
-    margin: 50px 0; /* Espaciado superior e inferior */
+    color: #000; /* Color negro */
+    text-align: center; /* Asegura que el texto esté centrado horizontalmente */
 }
 
 /* Página principal */
@@ -99,10 +126,11 @@ body {
 
 /* Media Queries para diseño responsivo */
 @media (max-width: 768px) {
-    .main-title {
-        font-size: 4rem; /* Reduce el tamaño del título */
+    .main-content h1 {
+        font-size: 2.5rem; /* Reduce el tamaño */
+           
     }
-
+        
     .btn {
         padding: 8px 20px; /* Reduce el tamaño del botón */
         font-size: 1rem; /* Reduce el tamaño del texto en los botones */
