@@ -25,7 +25,6 @@ body {
     align-items: center; /* Centra el contenido verticalmente */
     text-align: center;
     background: url('imagenes/fondo.jpg?v=1') no-repeat center center/cover;
-    background-size: cover;
 }
 
 /* Texto en la esquina superior derecha con línea */
