@@ -1,129 +1,130 @@
-    /* General Styles */
+/* General Styles 
+   (Estilos básicos y de estructura global) */
 body {
     margin: 0;
-    font-family: Century Gothic, Arial;
-    color: #333;
+    font-family: Century Gothic, Arial; /* Fuente general */
+    color: #333; /* Color de texto principal */
 }
 
+/* Portada: Título principal destacado */
 .portada-titulo {
-    font-size: 40rem;
-    margin-bottom: 200px;
+    font-size: 40rem; /* Tamaño del título */
+    margin-bottom: 200px; /* Espaciado inferior */
     font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
     color: #000; /* Color negro */
-    text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+    text-align: center; /* Centrado horizontal */
 }
 
-/* Página principal */
+/* Página principal: Fondo y contenedor */
 .main-page {
     position: relative;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    text-align: center;
-    background: url('imagenes/fondo.jpg?v=1') no-repeat center center/cover;
+    width: 100%; /* Ocupa todo el ancho */
+    min-height: 100vh; /* Altura mínima igual a la ventana */
+    overflow: hidden; /* Oculta contenido desbordado */
+    display: flex; /* Activación de flexbox */
+    justify-content: center; /* Centrado horizontal de elementos */
+    align-items: center; /* Centrado vertical de elementos */
+    text-align: center; /* Centrado del texto */
+    background: url('imagenes/fondo.jpg?v=1') no-repeat center center/cover; /* Imagen de fondo */
 }
 
-/* Texto en la esquina superior derecha con línea */
+/* Encabezado superior con línea decorativa */
 .header-with-line {
-    position: absolute;
+    position: absolute; /* Posicionamiento fijo respecto a la ventana */
     top: 0;
     left: 0;
     width: 100%; /* Ocupa todo el ancho */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Texto a la derecha */
-    padding: 10px;
-    z-index: 10;
+    display: flex; /* Elementos alineados en fila */
+    align-items: center; /* Centrado vertical de la línea y el texto */
+    justify-content: flex-end; /* Posición del texto a la derecha */
+    padding: 10px; /* Margen interno */
+    z-index: 10; /* Prioridad sobre otros elementos */
 }
 
 .corner-text {
     font-size: 1.0rem; /* Tamaño del texto */
     font-family: Century Gothic, Arial; /* Fuente específica */
     color: #000; /* Color del texto */
-    margin-right: 10px; /* Espaciado a la derecha del texto */
+    margin-right: 10px; /* Espaciado derecho */
 }
 
 .horizontal-line {
-    flex-grow: 1; /* Línea ocupa el resto del espacio */
+    flex-grow: 1; /* Línea ocupa el espacio restante */
     height: 1px; /* Grosor de la línea */
     background-color: #000; /* Color de la línea */
-    margin-left: 10px; /* Espaciado a la izquierda del texto */
+    margin-left: 10px; /* Espaciado izquierdo */
 }
 
-/* Fondo transparente */
-.background-overlay {
-    background: rgba(0, 0, 0, 0); /* Transparente */
-}
-
+/* Contenido principal sobre fondo */
 .main-content {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    margin-top: 140px; /* Ajusta el valor para mover el contenido hacia abajo */
-    text-align: center;
+    position: relative; /* Posicionamiento en contexto local */
+    z-index: 2; /* Asegura que esté sobre el fondo */
+    color: #fff; /* Color del texto */
+    margin-top: 140px; /* Ajusta la separación desde arriba */
+    text-align: center; /* Centrado del texto */
 }
 
+/* Título principal para secciones (sobre mí, proyectos) */
 .main-title {
     font-size: 6rem; /* Tamaño del texto */
     font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
-    color: #000; /* Color del texto */
-    text-align: center; /* Asegura que esté centrado */
+    color: #000; /* Color negro */
+    text-align: center; /* Centrado horizontal */
     margin: 50px 0; /* Espaciado superior e inferior */
 }
 
-.main-content h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-}
-
+/* Botones y contenedor de botones */
 .button-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+    display: flex; /* Botones en fila */
+    gap: 20px; /* Separación entre botones */
+    justify-content: center; /* Centrado de los botones */
 }
 
-/* Estilo de los botones */
 .btn {
-    display: inline-block;
-    padding: 10px 25px;
-    font-size: 1.2rem;
+    display: inline-block; /* Botón como un bloque dentro de línea */
+    padding: 10px 25px; /* Tamaño interno */
+    font-size: 1.2rem; /* Tamaño del texto */
     color: #000; /* Texto negro */
-    text-decoration: none;
+    text-decoration: none; /* Quita subrayado */
     background-color: transparent; /* Fondo transparente */
     border: 2px solid #000; /* Borde negro */
     border-radius: 25px; /* Bordes redondeados */
-    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Animaciones */
 }
 
 .btn:hover {
     background-color: #000; /* Fondo negro al pasar el cursor */
     color: #fff; /* Texto blanco al pasar el cursor */
-    transform: scale(1.05); /* Ligeramente más grande */
+    transform: scale(1.05); /* Agrandamiento ligero */
 }
 
-/* Media Queries para diseño responsivo */
+/* Fondo transparente */
+.background-overlay {
+    background: rgba(0, 0, 0, 0); /* Fondo totalmente transparente */
+}
+
+/* Media Queries: Diseño responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
-    .main-content h1 {
-        font-size: 2.5rem; /* Reduce el tamaño */
-           
+    /* Tamaño reducido para títulos en dispositivos móviles */
+    .main-content h1, .main-title {
+        font-size: 2.5rem; /* Texto más pequeño */
     }
-        
+
+    /* Botones en columna y tamaño reducido */
     .btn {
-        padding: 8px 20px; /* Reduce el tamaño del botón */
-        font-size: 1rem; /* Reduce el tamaño del texto en los botones */
+        padding: 8px 20px; /* Tamaño menor */
+        font-size: 1rem; /* Texto más pequeño */
     }
 
     .button-container {
-        flex-direction: column; /* Botones uno debajo del otro */
-        gap: 15px; /* Espacio entre botones */
+        flex-direction: column; /* Botones en columna */
+        gap: 15px; /* Espaciado entre botones */
     }
 
+    /* Ajuste del texto en la esquina */
     .corner-text {
-        font-size: 1rem; /* Ajusta el tamaño del texto */
-        top: 10px; /* Reduce la distancia superior */
-        left: 10px; /* Reduce la distancia izquierda */
+        font-size: 1rem; /* Tamaño del texto */
+        top: 10px; /* Distancia superior reducida */
+        left: 10px; /* Distancia izquierda reducida */
     }
 }
