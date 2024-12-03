@@ -66,6 +66,14 @@ body {
     text-align: center;
 }
 
+.main-title {
+    font-size: 6rem; /* Tamaño del texto */
+    font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
+    color: #000; /* Color del texto */
+    text-align: center; /* Asegura que esté centrado */
+    margin: 50px 0; /* Espaciado superior e inferior */
+}
+
 .main-content h1 {
     font-size: 4rem;
     margin-bottom: 20px;
