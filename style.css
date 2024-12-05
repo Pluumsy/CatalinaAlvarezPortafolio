@@ -1,4 +1,4 @@
-/* General Styles 
+ /* General Styles 
    (Estilos básicos y de estructura global) */
 body {
     margin: 0;
@@ -127,4 +127,4 @@ body {
         top: 10px; /* Distancia superior reducida */
         left: 10px; /* Distancia izquierda reducida */
     }
-}
+}      
