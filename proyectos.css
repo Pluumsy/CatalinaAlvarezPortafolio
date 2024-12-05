@@ -1,1 +1,49 @@
+/* Encabezado principal en proyectos */
+.main-title {
+    font-size: 2rem; /* Tamaño del texto */
+    font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
+    color: #000; /* Color negro */
+    text-align: center; /* Centrado horizontal */
+    margin: 50px 0; /* Espaciado superior e inferior */
+}
+
+/* Galería de Proyectos */
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.overlay h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
 
