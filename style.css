@@ -1,132 +1,8 @@
- /* General Styles 
-   (Estilos básicos y de estructura global) */
+/* General Styles */
 body {
     margin: 0;
     font-family: Century Gothic, Arial; /* Fuente general */
     color: #333; /* Color de texto principal */
-}
-
-/* Portada: Título principal destacado */
-.portada-titulo {
-    font-size: 8rem; /* Tamaño del título */
-    margin-bottom: 80px; /* Espaciado inferior */
-    font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
-    color: #000; /* Color negro */
-    text-align: center; /* Centrado horizontal */
-}
-
-/* Página principal: Fondo y contenedor */
-.main-page {
-    position: relative;
-    width: 100%; /* Ocupa todo el ancho */
-    min-height: 100vh; /* Altura mínima igual a la ventana */
-    overflow: hidden; /* Oculta contenido desbordado */
-    display: flex; /* Activación de flexbox */
-    justify-content: center; /* Centrado horizontal de elementos */
-    align-items: center; /* Centrado vertical de elementos */
-    text-align: center; /* Centrado del texto */
-    background: url('imagenes/fondo.jpg?v=1') no-repeat center center/cover; /* Imagen de fondo */
-}
-
-/* Encabezado superior con línea decorativa */
-.header-with-line {
-    position: absolute; /* Posicionamiento fijo respecto a la ventana */
-    top: 0;
-    left: 0;
-    width: 100%; /* Ocupa todo el ancho */
-    display: flex; /* Elementos alineados en fila */
-    align-items: center; /* Centrado vertical de la línea y el texto */
-    justify-content: flex-end; /* Posición del texto a la derecha */
-    padding: 10px; /* Margen interno */
-    z-index: 10; /* Prioridad sobre otros elementos */
-}
-
-.corner-text {
-    font-size: 1.0rem; /* Tamaño del texto */
-    font-family: Century Gothic, Arial; /* Fuente específica */
-    color: #000; /* Color del texto */
-    margin-right: 10px; /* Espaciado derecho */
-}
-
-.horizontal-line {
-    flex-grow: 1; /* Línea ocupa el espacio restante */
-    height: 1px; /* Grosor de la línea */
-    background-color: #000; /* Color de la línea */
-    margin-left: 10px; /* Espaciado izquierdo */
-}
-
-/* Contenido principal sobre fondo */
-.main-content {
-    position: relative; /* Posicionamiento en contexto local */
-    z-index: 2; /* Asegura que esté sobre el fondo */
-    color: #fff; /* Color del texto */
-    margin-top: 140px; /* Ajusta la separación desde arriba */
-    text-align: center; /* Centrado del texto */
-}
-
-/* Título principal para secciones (sobre mí, proyectos) */
-.main-title {
-    font-size: 2rem; /* Tamaño del texto */
-    font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
-    color: #000; /* Color negro */
-    text-align: center; /* Centrado horizontal */
-    margin: 50px 0; /* Espaciado superior e inferior */
-}
-
-/* Sección de Sobre Mí */
-.about-section {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-}
-
-.about-container {
-    display: flex; /* Contenedor principal en formato de fila */
-    gap: 20px; /* Espaciado entre texto e imagen */
-    justify-content: space-between; /* Distribución entre los elementos */
-    align-items: center; /* Alineación vertical */
-    max-width: 1200px; /* Ancho máximo de la sección */
-    margin: 0 auto; /* Centrado horizontal */
-}
-
-.about-text {
-    flex: 1; /* Ocupa la mitad del ancho */
-    text-align: left; /* Alineación del texto a la izquierda */
-}
-
-.about-text h2 {
-    font-size: 2.5rem;
-    color: #000;
-}
-
-.about-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #555;
-}
-.about-image img {
-    max-width: 80%; /* Reduce el ancho máximo al 80% del contenedor */
-    max-height: 400px; /* Limita la altura máxima a 400px */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    object-fit: cover; /* Ajusta el contenido de la imagen para que encaje */
-}
-
-.about-image img {
-    max-width: 100%; /* Escala la imagen proporcionalmente */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para mayor estética */
-}
-
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Cambia a diseño vertical */
-        text-align: center; /* Centra el texto e imagen */
-    }
-
-    .about-image {
-        margin-top: 20px; /* Espaciado adicional para la imagen */
-    }
 }
 
 /* Botones y contenedor de botones */
@@ -183,4 +59,4 @@ body {
         top: 10px; /* Distancia superior reducida */
         left: 10px; /* Distancia izquierda reducida */
     }
-}      
+}
