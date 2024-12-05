@@ -30,7 +30,7 @@
 }
 
 .about-image img {
-    max-width: 100%; /* Escala la imagen proporcionalmente */
+    max-width: 80%; /* Escala la imagen proporcionalmente */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para mayor estética */
 }
