@@ -73,6 +73,62 @@ body {
     margin: 50px 0; /* Espaciado superior e inferior */
 }
 
+/* Sección de Sobre Mí */
+.about-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    display: flex; /* Contenedor principal en formato de fila */
+    gap: 20px; /* Espaciado entre texto e imagen */
+    justify-content: space-between; /* Distribución entre los elementos */
+    align-items: center; /* Alineación vertical */
+    max-width: 1200px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.about-text {
+    flex: 1; /* Ocupa la mitad del ancho */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-image {
+    flex: 1; /* Ocupa la mitad del ancho */
+    display: flex; /* Asegura que la imagen sea un bloque alineado */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+.about-image img {
+    max-width: 100%; /* Escala la imagen proporcionalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para mayor estética */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Cambia a diseño vertical */
+        text-align: center; /* Centra el texto e imagen */
+    }
+
+    .about-image {
+        margin-top: 20px; /* Espaciado adicional para la imagen */
+    }
+}
+
 /* Botones y contenedor de botones */
 .button-container {
     display: flex; /* Botones en fila */
