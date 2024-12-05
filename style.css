@@ -66,7 +66,7 @@ body {
 
 /* Título principal para secciones (sobre mí, proyectos) */
 .main-title {
-    font-size: 4rem; /* Tamaño del texto */
+    font-size: 2rem; /* Tamaño del texto */
     font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
     color: #000; /* Color negro */
     text-align: center; /* Centrado horizontal */
