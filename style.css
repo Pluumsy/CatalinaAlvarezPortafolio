@@ -1,9 +1,5 @@
 /* General Styles */
-body {
-    margin: 0;
-    font-family: Century Gothic, Arial; /* Fuente general */
-    color: #333; /* Color de texto principal */
-}
+
 
 /* Botones y contenedor de botones */
 .button-container {
