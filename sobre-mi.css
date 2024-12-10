@@ -1,6 +1,6 @@
 /* Configuración General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Century Gothic, Arial; /* Fuente específica */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
