@@ -1,48 +1,52 @@
-/* Encabezado principal en proyectos */
-.main-title {
-    font-size: 2rem; /* Tamaño del texto */
-    font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
-    color: #000; /* Color negro */
-    text-align: center; /* Centrado horizontal */
-    margin: 50px 0; /* Espaciado superior e inferior */
+body {
+    background-color: #ffffff;
+    margin: 30px;
 }
 
-/* Galería de Proyectos */
-.galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.galeria h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 30px;
+    display: block;
+    border-radius: 3px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    columns: 3 320px; 
+    column-gap: 30px;
 }
 
 .box {
     position: relative;
-    width: 100%;
-}
-
-.box img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0px; 
 }
 
 .overlay {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
+    bottom: 0;
+    left: 0;
+    background: #000000b2;
+    width: 100%;
+    height: 0%;
+    border-radius: 3px;
+    transition: .5s ease;
+    overflow: hidden;
 }
 
 .overlay h2 {
-    margin: 0;
-    font-size: 1.2rem;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.box:hover .overlay {
+    height: 100%;
+    cursor: pointer; 
 }
