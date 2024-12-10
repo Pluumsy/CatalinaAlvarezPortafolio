@@ -67,7 +67,7 @@
     border: 2px solid #000; /* Borde negro */
     border-radius: 25px; /* Bordes redondeados */
     background-color: transparent; /* Fondo transparente */
-    font-family: 'Acme', sans-serif; /* Fuente específica */
+    font-family: Century Gothic, Arial; /* Fuente específica */ /* Fuente específica */
     transition: all 0.3s ease; /* Animación de transición */
 }
 
