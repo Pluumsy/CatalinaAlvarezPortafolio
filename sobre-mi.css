@@ -30,10 +30,18 @@ body {
 
 /* Imagen */
 .about-image img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 5%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa todo el espacio disponible en el contenedor */
+    max-width: 400px; /* Tamaño máximo aumentado */
+    border-radius: 5%; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 0 auto; /* Centrar en caso de que haya espacio extra */
+}
+
+.image-column {
+    display: flex; /* Asegura que la imagen se centre */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    max-width: 450px; /* Opcional: puedes definir un tamaño máximo para el contenedor */
 }
 
 /* Texto principal */
