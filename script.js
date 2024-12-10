@@ -1,26 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() { 
+document.addEventListener("DOMContentLoaded", function() {
     const imageContainer = document.getElementById('imageContainer');
 
     // Ruta de la carpeta de imágenes
     const imagesFolder = 'imagenes/';
-
-    // Arreglo con los nombres específicos de cada proyecto
-    const projectNames = [
-        "Parásitos", // Nombre del Proyecto 1
-        "Beethoven",                   // Nombre del Proyecto 2
-        "IllumEgo",     // Nombre del Proyecto 3
-        "Linea de té",         // Nombre del Proyecto 4
-        "Ilustración", // Nombre del Proyecto 5
-    
-        // Agrega más nombres de proyectos si es necesario
-    ];
 
     // Función para cargar imágenes secuencialmente hasta encontrar una que no exista
     async function findTotalImages() {
         let totalImages = 0;
         for (let i = 1; ; i++) {
             const paddedNumber = String(i).padStart(2, '0');
-            const imageName = imagen${paddedNumber}.jpg;
+            const imageName = `imagen${paddedNumber}.jpg`;
             const image = new Image();
             image.src = imagesFolder + imageName;
             try {
@@ -38,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const names = [];
         for (let i = 1; i <= total; i++) {
             const paddedNumber = String(i).padStart(2, '0');
-            names.push(imagen${paddedNumber}.jpg);
+            names.push(`imagen${paddedNumber}.jpg`);
         }
         return names;
     }
@@ -51,16 +40,12 @@ document.addEventListener("DOMContentLoaded", function() {
         imageNames.forEach((imageName, index) => {
             const box = document.createElement('div');
             box.className = 'box';
-
-            // Usa el nombre del proyecto si existe en el arreglo, de lo contrario usa "Proyecto X"
-            const projectName = projectNames[index] || Proyecto ${index + 1};
-
-            box.innerHTML = 
-                <img src="${imagesFolder}${imageName}" alt="${projectName}">
+            box.innerHTML = `
+                <img src="${imagesFolder}${imageName}" alt="">
                 <div class="overlay">
-                    <h2>${projectName}</h2>
+                    <h2>Proyecto ${index + 1}</h2>
                 </div>
-            ;
+            `;
             imageContainer.appendChild(box);
         });
 
@@ -101,4 +86,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Llamar a la función para mostrar imágenes
     displayImages();
-});                                        
+});
