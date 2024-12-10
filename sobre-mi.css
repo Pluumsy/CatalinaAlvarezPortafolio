@@ -27,6 +27,7 @@ body {
 
 /* Columna izquierda: Imagen */
 .image-column {
+    background-color: #dedded;
     display: flex; /* Centrado de la imagen */
     justify-content: center;
     align-items: center;
@@ -43,6 +44,7 @@ body {
 
 /* Columna derecha: Descripción, Software y Contacto */
 .text-column {
+    background-color: #dedded;
     display: flex;
     flex-direction: column;
 }
