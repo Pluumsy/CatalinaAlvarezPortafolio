@@ -11,8 +11,8 @@ body {
     text-align: center;
     background-color: #007BFF;
     color: white;
-    padding: 20px;
-    font-size: 2rem;
+    padding: 15px;
+    font-size: 1.5rem;
 }
 
 /* Sección de Sobre Mí */
@@ -35,7 +35,7 @@ body {
 .about-image img {
     width: 80%; /* Tamaño moderado */
     max-width: 200px; /* Tamaño máximo */
-    border-radius: 50%;
+    border-radius: 5%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
