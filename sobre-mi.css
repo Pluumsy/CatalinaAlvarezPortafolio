@@ -18,7 +18,7 @@ body {
 /* Sección principal */
 .main-section {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Imagen ocupa menos espacio */
+    grid-template-columns: 1fr 2fr; /* Columna izquierda más pequeña que la derecha */
     gap: 20px;
     padding: 30px;
     background-color: #f9f9f9;
