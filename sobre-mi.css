@@ -18,32 +18,48 @@ body {
 /* Sección principal */
 .main-section {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Imagen y contacto más pequeños */
+    grid-template-rows: auto auto; /* Dos filas */
     gap: 20px;
     padding: 30px;
     background-color: #f9f9f9;
-    align-items: flex-start; /* Alineación superior */
 }
 
-.left-column,
-.right-column {
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px;
+}
+
+.column {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espaciado interno */
-}
-
-/* Imagen */
-.about-image {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Imagen */
 .about-image img {
     width: 100%;
     max-width: 250px;
     border-radius: 5%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto principal */
+.about-text {
+    text-align: left;
+    max-width: 400px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
 
 /* Información de contacto */
@@ -53,6 +69,8 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
 }
 
 .contact-info h3 {
@@ -73,22 +91,6 @@ body {
     margin-bottom: 5px;
 }
 
-/* Texto principal */
-.about-text {
-    text-align: left;
-}
-
-.about-text h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.about-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-}
-
 /* Software */
 .software-section {
     background-color: #fff;
@@ -96,6 +98,8 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
 .software-section h3 {
@@ -153,12 +157,7 @@ body {
 
 /* Responsividad */
 @media (max-width: 768px) {
-    .main-section {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-info,
-    .software-section {
-        margin-bottom: 20px;
+    .row {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
     }
 }
