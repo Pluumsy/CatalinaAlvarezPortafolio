@@ -87,7 +87,7 @@ body {
 .software-section .section-title {
     font-size: 1.5rem;
     color: #333;
-    font-family: 'Acme', sans-serif;
+    font-family: Century Gothic, Arial; /* Fuente específica */
     margin-bottom: 15px;
     text-align: center;
 }
