@@ -9,8 +9,8 @@ body {
 /* Encabezado */
 .main-header {
     text-align: center;
-    background-color: #007BFF;
-    color: white;
+    background-color: #dedded;
+    color: black;
     padding: 15px;
     font-size: 1rem;
 }
