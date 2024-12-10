@@ -6,7 +6,7 @@ body {
 .galeria h1 {
     text-align: center;
     font-family: Century Gothic, Arial; /* Fuente específica */
-    font-size: 2rem;
+    font-size: 0.8rem;
     margin-top: 20px;
     color: #333;
 }
