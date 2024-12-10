@@ -1,14 +1,22 @@
+/* Reset de estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Página principal: Fondo y contenedor */
 .main-page {
     position: relative;
-    width: 100%; /* Ocupa todo el ancho */
-    min-height: 100vh; /* Altura mínima igual a la ventana */
+    width: 100vw; /* Asegura que ocupa todo el ancho de la ventana */
+    height: 100vh; /* Asegura que ocupa toda la altura de la ventana */
     overflow: hidden; /* Oculta contenido desbordado */
     display: flex; /* Activación de flexbox */
     justify-content: center; /* Centrado horizontal de elementos */
     align-items: center; /* Centrado vertical de elementos */
     text-align: center; /* Centrado del texto */
-    background: url('imagenes/fondo.jpg?v=1') no-repeat center center/cover; /* Imagen de fondo */
+    background: url('imagenes/fondo.jpg?v=1') no-repeat center center; /* Imagen de fondo centrada */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
 }
 
 /* Portada: Título principal destacado */
@@ -52,7 +60,6 @@
     position: relative; /* Posicionamiento en contexto local */
     z-index: 2; /* Asegura que esté sobre el fondo */
     color: #fff; /* Color del texto */
-    margin-top: 140px; /* Ajusta la separación desde arriba */
     text-align: center; /* Centrado del texto */
 }
 
@@ -67,7 +74,7 @@
     border: 2px solid #000; /* Borde negro */
     border-radius: 25px; /* Bordes redondeados */
     background-color: transparent; /* Fondo transparente */
-    font-family: Century Gothic, Arial; /* Fuente específica */ /* Fuente específica */
+    font-family: Century Gothic, Arial; /* Fuente específica */
     transition: all 0.3s ease; /* Animación de transición */
 }
 
@@ -75,4 +82,27 @@
     background-color: #000; /* Fondo negro */
     color: #fff; /* Texto blanco */
     cursor: pointer; /* Cambia el cursor */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .portada-titulo {
+        font-size: 4rem; /* Reduce tamaño del título */
+    }
+
+    .button-container .btn {
+        font-size: 0.9rem; /* Reduce tamaño del texto de los botones */
+        padding: 8px 16px; /* Ajusta relleno de los botones */
+    }
+}
+
+@media (max-width: 480px) {
+    .portada-titulo {
+        font-size: 3rem; /* Título más pequeño en pantallas móviles */
+    }
+
+    .button-container .btn {
+        font-size: 0.8rem; /* Texto de botones más pequeño */
+        padding: 6px 12px; /* Relleno más pequeño */
+    }
 }
