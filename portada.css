@@ -22,7 +22,7 @@
 /* Portada: Título principal destacado */
 .portada-titulo {
     font-size: 8rem; /* Tamaño del título */
-    margin-bottom: 80px; /* Espaciado inferior */
+    margin-bottom: 50px; /* Espaciado inferior */
     font-family: "Baskerville Old Face", Georgia, serif; /* Fuente específica */
     color: #000; /* Color negro */
     text-align: center; /* Centrado horizontal */
