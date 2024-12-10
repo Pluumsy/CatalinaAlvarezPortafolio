@@ -55,3 +55,24 @@
     margin-top: 140px; /* Ajusta la separación desde arriba */
     text-align: center; /* Centrado del texto */
 }
+
+/* Botones minimalistas */
+.button-container .btn {
+    display: inline-block;
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 0 10px; /* Espaciado entre botones */
+    font-size: 1rem; /* Tamaño del texto */
+    color: #000; /* Texto negro */
+    text-decoration: none; /* Sin subrayado */
+    border: 2px solid #000; /* Borde negro */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: transparent; /* Fondo transparente */
+    font-family: 'Acme', sans-serif; /* Fuente específica */
+    transition: all 0.3s ease; /* Animación de transición */
+}
+
+.button-container .btn:hover {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    cursor: pointer; /* Cambia el cursor */
+}
