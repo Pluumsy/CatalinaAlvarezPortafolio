@@ -24,27 +24,29 @@ body {
     background-color: #f9f9f9;
 }
 
-.row {
-    display: flex;
-}
-
-/* Imagen */
-.about-image img {
-    width: 100%; /* Ocupa todo el espacio disponible en el contenedor */
-    max-width: 400px; /* Tamaño máximo aumentado */
-    border-radius: 5%; /* Esquinas redondeadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin: 0 auto; /* Centrar en caso de que haya espacio extra */
-}
-
+/* Columna izquierda: Imagen */
 .image-column {
-    display: flex; /* Asegura que la imagen se centre */
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    max-width: 450px; /* Opcional: puedes definir un tamaño máximo para el contenedor */
+    display: flex; /* Centrado de la imagen */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Texto principal */
+.about-image img {
+    width: 100%; /* Ocupa todo el espacio disponible */
+    height: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    max-width: 350px; /* Tamaño máximo de la imagen */
+    border-radius: 5%; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Columna derecha: Descripción, Software y Contacto */
+.text-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Descripción */
 .about-text {
     text-align: left;
     margin-bottom: 20px;
