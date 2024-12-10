@@ -1,54 +1,59 @@
 /* Sección de Software */
 .software-section {
-    padding: 50px 20px;
+    padding: 30px 20px;
     background-color: #fff; /* Fondo blanco para contraste */
-    text-align: center; /* Centra el contenido */
+    display: flex;
+    justify-content: center; /* Centra la sección horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 50vh; /* Ocupa la mitad de la altura de la pantalla */
 }
 
 .software-section .section-title {
-    font-size: 2.5rem; /* Tamaño del título */
+    font-size: 2rem; /* Tamaño del título */
     color: #333; /* Color del texto */
     font-family: 'Acme', sans-serif; /* Fuente */
-    margin-bottom: 30px; /* Espaciado inferior */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-align: center;
 }
 
 .software-container {
     display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
-    gap: 20px; /* Espaciado entre los elementos */
-    max-width: 1200px;
-    margin: 0 auto; /* Centrado horizontal */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center; /* Centra los íconos verticalmente */
+    flex-wrap: nowrap; /* Mantén los íconos en una sola fila */
+    gap: 15px; /* Espaciado entre los elementos */
 }
 
 .software-item {
-    width: 150px; /* Ancho fijo para cada software */
+    width: 80px; /* Reduce el tamaño de cada software */
     text-align: center;
 }
 
 .software-item img {
     max-width: 100%; /* Imagen responsiva */
     height: auto;
-    margin-bottom: 10px; /* Espaciado entre el icono y el texto */
-    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1)); /* Agregar sombra */
+    margin-bottom: 5px; /* Espaciado entre el icono y el texto */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1)); /* Agregar sombra */
 }
 
 .software-item p {
-    font-size: 1rem; /* Tamaño del texto del software */
+    font-size: 0.8rem; /* Tamaño del texto reducido */
     color: #555; /* Color del texto */
+    margin: 0;
 }
 
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
     .software-container {
-        gap: 15px; /* Reduce el espacio entre elementos */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas si es necesario */
+        gap: 10px; /* Reduce el espacio entre elementos */
     }
 
     .software-item {
-        width: 100px; /* Reduce el ancho de cada software */
+        width: 60px; /* Reduce el ancho de cada software aún más */
     }
 
     .software-section .section-title {
-        font-size: 2rem; /* Reduce el tamaño del título */
+        font-size: 1.5rem; /* Reduce el tamaño del título */
     }
 }
