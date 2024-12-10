@@ -67,7 +67,7 @@ body {
 /* Software */
 .software-section {
     margin-top: 15px;
-    background-color: #fff;
+    background-color: #dedded;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -106,7 +106,7 @@ body {
 /* Información de contacto */
 .contact-info {
     margin-top: 15px;
-    background-color: #fff;
+    background-color: #dedded;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
