@@ -1,6 +1,5 @@
 /* Configuración General */ 
 body {
-    background-color: #dedded;
     font-family: Century Gothic, Arial;
     margin: 0;
     padding: 0;
@@ -22,12 +21,11 @@ body {
     grid-template-columns: 1fr 2fr; /* Columna izquierda más pequeña que la derecha */
     gap: 20px;
     padding: 30px;
-    background-color: #f9f9f9;
+
 }
 
 /* Columna izquierda: Imagen */
 .image-column {
-    background-color: #dedded;
     display: flex; /* Centrado de la imagen */
     justify-content: center;
     align-items: center;
@@ -44,7 +42,6 @@ body {
 
 /* Columna derecha: Descripción, Software y Contacto */
 .text-column {
-    background-color: #dedded;
     display: flex;
     flex-direction: column;
 }
@@ -69,7 +66,6 @@ body {
 /* Software */
 .software-section {
     margin-top: 15px;
-    background-color: #dedded;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -108,7 +104,6 @@ body {
 /* Información de contacto */
 .contact-info {
     margin-top: 15px;
-    background-color: #dedded;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
