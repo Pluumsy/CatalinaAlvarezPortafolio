@@ -1,8 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const imageContainer = document.getElementById('imageContainer');
 
     // Ruta de la carpeta de imágenes
     const imagesFolder = 'imagenes/';
+
+    // Nombres personalizados para los proyectos
+    const projectNames = [
+        "Diseño de Interfaz A",
+        "Prototipo UX",
+        "Modelado 3D Producto",
+        "Campaña Publicitaria",
+        "Aplicación Móvil",
+        "Animación Digital"
+    ];
 
     // Función para cargar imágenes secuencialmente hasta encontrar una que no exista
     async function findTotalImages() {
@@ -38,12 +48,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const imageNames = generateImageNames(totalImages);
 
         imageNames.forEach((imageName, index) => {
+            const projectName = projectNames[index] || `Proyecto ${index + 1}`; // Usa el nombre del array o un nombre genérico si no hay más nombres
             const box = document.createElement('div');
             box.className = 'box';
             box.innerHTML = `
                 <img src="${imagesFolder}${imageName}" alt="">
                 <div class="overlay">
-                    <h2>Proyecto ${index + 1}</h2>
+                    <h2>${projectName}</h2>
                 </div>
             `;
             imageContainer.appendChild(box);
