@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Nombres personalizados para los proyectos
     const projectNames = [
-        "Diseño de Interfaz A",
-        "Prototipo UX",
-        "Modelado 3D Producto",
-        "Campaña Publicitaria",
-        "Aplicación Móvil",
-        "Animación Digital"
+        "Parásitos",
+        "Beethoven",
+        "Illume Ego",
+        "Línea de Té",
+        "Ilustración",
+        "Aplicación Red"
     ];
 
     // Función para cargar imágenes secuencialmente hasta encontrar una que no exista
