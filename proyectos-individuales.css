@@ -21,7 +21,7 @@ body {
 header {
     text-align: center; /* Alinear texto al centro */
     padding: 1rem; /* Relleno interior */
-    background: rgb(131, 0, 0); /* Color de fondo */
+    background: #dedded; /* Color de fondo */
     color:  #000; /* Color del texto */
 }
 
