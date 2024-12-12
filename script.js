@@ -6,12 +6,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Nombres personalizados para los proyectos
     const projectNames = [
-        "Parásitos",
+         "Parásitos",
         "Beethoven",
         "Illume Ego",
         "Línea de Té",
         "Ilustración",
         "Aplicación Red"
+    ];
+
+    // Rutas de las páginas de los proyectos
+    const projectLinks = [
+        "proyecto1.html",
+        "proyecto2.html",
+        "proyecto3.html",
+        "proyecto4.html",
+        "proyecto5.html",
+        "proyecto6.html"
     ];
 
     // Función para cargar imágenes secuencialmente hasta encontrar una que no exista
@@ -49,13 +59,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         imageNames.forEach((imageName, index) => {
             const projectName = projectNames[index] || `Proyecto ${index + 1}`; // Usa el nombre del array o un nombre genérico si no hay más nombres
+            const projectLink = projectLinks[index] || "#"; // Usa el enlace o un enlace vacío si no está definido
             const box = document.createElement('div');
             box.className = 'box';
             box.innerHTML = `
-                <img src="${imagesFolder}${imageName}" alt="">
-                <div class="overlay">
-                    <h2>${projectName}</h2>
-                </div>
+                <a href="${projectLink}">
+                    <img src="${imagesFolder}${imageName}" alt="${projectName}">
+                    <div class="overlay">
+                        <h2>${projectName}</h2>
+                    </div>
+                </a>
             `;
             imageContainer.appendChild(box);
         });
