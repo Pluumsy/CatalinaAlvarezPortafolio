@@ -11,7 +11,7 @@ Manual de Estilos para proyecto-02.html
 
 /* Estilos del cuerpo de la página */
 body {
-    font-family: Arial, sans-serif; /* Familia de fuente */
+    font-family:  Century Gothic, Arial; /* Familia de fuente */
     line-height: 1.6; /* Altura de línea */
     color: rgb(131, 0, 0); /* Color principal del texto */
     background-color: rgb(255, 250, 250); /* Fondo ligeramente claro */
