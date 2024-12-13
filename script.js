@@ -110,4 +110,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Llamar a la función para mostrar imágenes
     displayImages();
+}
 
