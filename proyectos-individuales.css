@@ -23,6 +23,7 @@ header {
     padding: 1rem; /* Relleno interior */
     background: #dedded; /* Color de fondo */
     color:  #000; /* Color del texto */
+    font-size: 0.8rem;
 }
 
 /* Estilos del contenedor de proyecto */
