@@ -29,7 +29,7 @@ header {
 .project-container {
     display: flex; /* Mostrar como flexbox */
     flex-direction: column; /* Dirección de los elementos */
-    max-width: 1200px; /* Ancho máximo */
+    max-width: 1600px; /* Ancho máximo */
     margin: 2rem auto; /* Márgenes */
     padding: 1rem; /* Relleno interior */
     background: white; /* Color de fondo */
