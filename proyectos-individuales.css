@@ -96,7 +96,7 @@ header {
 }
 
 .thumbnail:hover {
-    border-color: rgb(131, 0, 0); /* Color del borde al pasar el mouse */
+    border-color: black; /* Color del borde al pasar el mouse */
 }
 
 /* Footer */
