@@ -1,12 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
     const imageContainer = document.getElementById('imageContainer');
 
-    // Ruta de la carpeta de imágenes
+    // Ruta de la carpeta de imágenes (todas las imágenes en la misma carpeta)
     const imagesFolder = 'imagenes/';
+
+    // Rutas manuales de las imágenes (solo nombres secuenciales)
+    const imageNames = [
+        'imagen01.jpg',
+        'imagen02.jpg',
+        'imagen03.jpg',
+        'imagen04.jpg',
+        'imagen05.jpg',
+        'imagen06.jpg'
+    ];
 
     // Nombres personalizados para los proyectos
     const projectNames = [
-         "Parásitos",
+        "Parásitos",
         "Beethoven",
         "Illume Ego",
         "Línea de Té",
@@ -24,39 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "proyecto6.html"
     ];
 
-    // Función para cargar imágenes secuencialmente hasta encontrar una que no exista
-    async function findTotalImages() {
-        let totalImages = 0;
-        for (let i = 1; ; i++) {
-            const paddedNumber = String(i).padStart(2, '0');
-            const imageName = `imagen${paddedNumber}.jpg`;
-            const image = new Image();
-            image.src = imagesFolder + imageName;
-            try {
-                await image.decode();
-                totalImages++;
-            } catch (error) {
-                break;
-            }
-        }
-        return totalImages;
-    }
-
-    // Función para generar nombres de archivo
-    function generateImageNames(total) {
-        const names = [];
-        for (let i = 1; i <= total; i++) {
-            const paddedNumber = String(i).padStart(2, '0');
-            names.push(`imagen${paddedNumber}.jpg`);
-        }
-        return names;
-    }
-
     // Función para mostrar imágenes en la galería
-    async function displayImages() {
-        const totalImages = await findTotalImages();
-        const imageNames = generateImageNames(totalImages);
-
+    function displayImages() {
         imageNames.forEach((imageName, index) => {
             const projectName = projectNames[index] || `Proyecto ${index + 1}`; // Usa el nombre del array o un nombre genérico si no hay más nombres
             const projectLink = projectLinks[index] || "#"; // Usa el enlace o un enlace vacío si no está definido
@@ -110,6 +89,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Llamar a la función para mostrar imágenes
     displayImages();
-   });
 });
-
