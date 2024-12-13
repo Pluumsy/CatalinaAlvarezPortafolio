@@ -54,3 +54,26 @@ img {
     height: 100%;
     cursor: pointer; 
 }
+
+/* Botón final */
+.back-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.back-container .btn:hover {
+    background-color: #000;
+    color: #fff;
+}
