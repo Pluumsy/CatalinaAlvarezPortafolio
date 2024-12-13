@@ -32,7 +32,7 @@ header {
     max-width: 1200px; /* Ancho máximo */
     margin: 2rem auto; /* Márgenes */
     padding: 1rem; /* Relleno interior */
-    background: rgb(255, 239, 239); /* Color de fondo */
+    background: white; /* Color de fondo */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
     border-radius: 10px; /* Borde redondeado */
 }
