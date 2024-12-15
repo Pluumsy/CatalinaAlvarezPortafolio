@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Beethoven",
         "Illume Ego",
         "Línea de Té",
-        "Ilustración",
+        "Trayecto-ria",
         "Aplicación Red"
     ];
 
