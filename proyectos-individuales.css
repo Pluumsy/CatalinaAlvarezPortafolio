@@ -155,10 +155,15 @@ footer {
     object-fit: cover;
     border-radius: 10px;
 }
+/* Botón final */
+.back-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
 .back-container .btn {
     display: inline-block;
     padding: 10px 20px;
-    font-family: Century Gothic, Arial;
     font-size: 1rem;
     text-decoration: none;
     color: #000;
